@@ -398,6 +398,64 @@ h1 {
   margin-bottom: 50px;
 }
 
+.form {
+  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #212121;
+}
+
+.list-form {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  flex-direction: column;
+  /* justify-content: center; */
+  position: relative;
+}
+
+.icon-form {
+  position: absolute;
+  /* display: flex; */
+  width: 20px;
+  height: 20px;
+  background-color: green;
+}
+
+.form-text + .icon-form {
+  background-color: red;
+}
+
+.text-icon {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+
+/* .form-text::after {
+  content: "";
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/tel.svg);
+} */
+
+.form-text {
+  display: block;
+}
+
 .our-business-list {
   display: flex;
   width: 1200px;
@@ -714,36 +772,38 @@ h1 {
   position: absolute;
   right: 8px;
   top: 8px;
-  height: 11px;
-  width: 11px;
-  padding-left: 10px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-left: 10px;
   padding-right: 10px;
   padding-top: 9px;
-  padding-bottom: 9px;
+  padding-bottom: 9px; */
   border-radius: 50%;
   border: 1px solid#0000001A;
-  z-index: 11;
   background-color: #ffffff;
-  background-image: url(../img/close-black.svg);
+  /* z-index: 11;
+  background-image: url(../img/close-black.svg); */
   /* outline: 1px solid green; */
 }
 
 .close-button-icon {
-  position: absolute;
+  /* position: absolute; */
   /* right: 8px;
   top: 8px; */
-  transform: translate(-50%, -50%);
-  height: 11px;
-  width: 11px;
-  border-radius: 50%;
+  /* transform: translate(-50%, -50%); */
+  height: 18px;
+  width: 18px;
+  /* border-radius: 50%; */
   /* padding-left: 10px;
   padding-right: 10px;
   padding-top: 9px;
-  padding-bottom: 9px;  */
-  z-index: 111;
-  stroke: black;
-  fill: var(--logo-color);
-  /* outline: 1px solid red; */
+  /* padding-bottom: 9px;  */
+  /* z-index: 111;
+  stroke: black; */
+  fill: black;
 }
 
 .links:hover .all-services-modal-text {

@@ -66,36 +66,61 @@
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <!-------------------- ФОРМА------------------------------>
-              <h2>Оставьте свои данные, мы вам перезвоним</h2>
-              <form>
-                <label>
-                  <span class="form-text">Имя</span>
-                  <input type="text" name="name" />
-                </label>
-                <label>
-                  <span class="form-text">Телефон</span>
-                  <input type="tel" name="telephone" />
-                </label>
-                <label>
-                  <span class="form-text">Почта</span>
-                  <input type="email" name="email" />
-                </label>
-                <label>
-                  <span class="form-text">Комментарий</span>
-                  <textarea
-                    name="comments"
-                    id=""
-                    cols=""
-                    rows="5"
-                    placeholder="Введите текст"
-                  >
-                  </textarea>
-                </label>
+              <form class="form">
+                <h2>Оставьте свои данные, мы вам перезвоним</h2>
+                <ul class="list-form">
+                  <li class="item-form">
+                    <label class="label">
+                      <span class="form-text">Имя</span>
+                      <input class="" type="form-text" name="name" />
+                      <span class="icon-form"></span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <label>
+                      <span class="form-text">Телефон</span>
+                      <input class="" type="tel" name="telephone" />
+                    </label>
+                  </li>
+
+                  <li>
+                    <label>
+                      <span class="form-text">Почта</span>
+                      <input class="" type="email" name="email" />
+                    </label>
+                  </li>
+
+                  <li>
+                    <label>
+                      <span class="form-text">Комментарий</span>
+                      <textarea
+                        class=""
+                        name="comments"
+                        id=""
+                        cols=""
+                        rows="5"
+                        placeholder="Введите текст"
+                      >
+                      </textarea>
+                    </label>
+                  </li>
+                </ul>
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    class="checkbox"
+                    name="hobby"
+                    value="sports"
+                    id="sports"
+                  />
+                  <label class="form-label" for="sports">Sports</label>
+                </div>
               </form>
               <!-------------------- ФОРМА------------------------------>
               <button class="close-button" type="button" data-modal-close>
                 <svg class="close-button-icon">
-                  <use href="./img/vector777.svg#icomoon-ignore"></use>
+                  <use href="./img/symbol-defs-old.svg#close"></use>
                 </svg>
               </button>
             </div>
