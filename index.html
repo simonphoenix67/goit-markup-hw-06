@@ -83,7 +83,7 @@
                   <li class="item-form">
                     <label class="label">
                       <span class="form-text">Телефон</span>
-                      <input class="form-input" type="form-text" name="name" />
+                      <input class="form-input" type="form-text" name="tel" />
                       <svg class="icon-form-tel">
                         <use href="./img/symbol-defs-old.svg#form-tel"></use>
                       </svg>
@@ -93,7 +93,7 @@
                   <li class="item-form">
                     <label class="label">
                       <span class="form-text">Почта</span>
-                      <input class="form-input" type="form-text" name="name" />
+                      <input class="form-input" type="form-text" name="mail" />
                       <svg class="icon-form-mail">
                         <use href="./img/symbol-defs-old.svg#form-mail"></use>
                       </svg>
@@ -101,7 +101,7 @@
                   </li>
 
                   <li class="item-form">
-                    <label>
+                    <label class="label">
                       <span class="form-text">Комментарий</span>
                       <textarea
                         class="comments"
@@ -111,16 +111,27 @@
                   </li>
                 </ul>
                 <div class="checkbox">
-                  <label>
-                    <input class="agreement" type="checkbox" /><span
-                      class="agreement-text"
-                    >
+                  <label class="label-check">
+                    <span class="check-background">
+                      <div class="check-icon-div">
+                        <svg class="check-button">
+                          <use
+                            href="./img/symbol-defs-old.svg#icon-agree-check"
+                          ></use>
+                        </svg>
+                      </div>
+                    </span>
+                    <input
+                      class="agreement"
+                      type="checkbox"
+                      name="checkbox"
+                    /><span class="agreement-text">
                       Соглашаюсь с рассылкой и принимаю</span
                     >
                     <a class="agreement-link" href="">Условия договора</a>
                   </label>
                   <div>
-                    <button type="button" class="send-button">Отправить</button>
+                    <button type="submit" class="send-button">Отправить</button>
                   </div>
                 </div>
               </form>
@@ -527,9 +538,14 @@
           <h2 class="subuscribe-text">Подпишитесь на рассылку</h2>
           <form class="subscribe-form">
             <label class="label-subscribe" for="">
-              <input class="input-subscribe" type="mail" placeholder="E-mail" />
+              <input
+                class="input-subscribe"
+                type="mail"
+                placeholder="E-mail"
+                name="subscribe"
+              />
             </label>
-            <button class="send-subscribe-button" type="button">
+            <button class="send-subscribe-button" type="submit">
               <p class="subscribe-text-button">Подписаться</p>
               <svg class="send-subscribe-icon">
                 <use href="./img/symbol-defs-old.svg#icon-send"></use>
