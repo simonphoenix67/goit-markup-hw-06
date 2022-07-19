@@ -148,12 +148,15 @@ ul {
 }
 
 .bg-img {
-  background-image: linear-gradient(#2f303a 40%, #2f303a 40%);
   /* display: flex; */
   object-fit: cover;
   background-repeat: no-repeat;
   max-width: 1600px;
-  background-image: url(../img/img-bg.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/img-bg.jpg);
   margin-right: auto;
   margin-left: auto;
 }
@@ -459,6 +462,11 @@ h1 {
   border: none;
 }
 
+.comments:focus-within {
+  outline: 1px solid var(--brand-color);
+  border: none;
+}
+
 .label:focus-within > .icon-form-name {
   fill: var(--brand-color);
 }
@@ -544,6 +552,8 @@ h1 {
   padding-right: 16px;
   padding-bottom: 12px;
   padding-top: 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }
 
 /* .checkbox {
@@ -578,9 +588,9 @@ h1 {
   padding-right: 2px; */
 }
 
-.agreement {
+/* .agreement {
   display: none;
-}
+} */
 
 .agreement-text {
   font-weight: 400;
@@ -602,6 +612,9 @@ h1 {
  */
 
 .send-button {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
   margin-top: 30px;
   background-color: #188ce8;
   color: var(--secondary-color);
@@ -966,6 +979,7 @@ h1 {
   /* z-index: 111;
   stroke: black; */
   fill: black;
+  transform: opacity;
 }
 
 .close-button-icon:hover {
@@ -997,10 +1011,11 @@ h1 {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  /* transition-property: opacity;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal {
   opacity: 1;
   position: absolute;
@@ -1113,6 +1128,7 @@ h1 {
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
+  color: white;
 }
 
 .input-subscribe:focus-within {
